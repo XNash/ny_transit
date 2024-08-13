@@ -157,10 +157,10 @@ class InscriptionPage extends HookConsumerWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Expanded(
@@ -189,7 +189,7 @@ class InscriptionPage extends HookConsumerWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Column(
@@ -200,7 +200,7 @@ class InscriptionPage extends HookConsumerWidget {
                       onTap: () {
                         //TODO: Continue with Facebook
                         ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
+                          const SnackBar(
                             content: Text(
                               "Signing with Facebook...",
                             ),
@@ -214,7 +214,7 @@ class InscriptionPage extends HookConsumerWidget {
                           color: const Color(0xffe7e9ed),
                           borderRadius: BorderRadius.circular(25),
                         ),
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
@@ -236,10 +236,10 @@ class InscriptionPage extends HookConsumerWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Expanded(
@@ -267,7 +267,7 @@ class InscriptionPage extends HookConsumerWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     ElevatedButton(
@@ -275,7 +275,7 @@ class InscriptionPage extends HookConsumerWidget {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => LoginPage(),
+                            builder: (context) => const LoginPage(),
                           ),
                         );
                       },

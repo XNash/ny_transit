@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:ny_transit/presentation/pages/home_page.dart';
+import 'package:ny_transit/presentation/pages/inscription_page.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -19,7 +19,7 @@ class MyApp extends ConsumerWidget {
         primaryColor: const Color(0xff67bed1),
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const InscriptionPage(),
     );
   }
 }

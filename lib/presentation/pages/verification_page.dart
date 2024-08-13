@@ -22,21 +22,21 @@ class VerificationPage extends HookConsumerWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "Code de vérification",
                     style: TextStyle(
                         color: Color(0xff29a3be),
                         fontSize: 25,
                         fontFamily: "Baloo"),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 30),
                     child: RichText(
                       textAlign: TextAlign.center,
-                      text: TextSpan(
+                      text: const TextSpan(
                         text:
                             "Nous avons envoyé un code de vérification sur votre téléphone : ",
                         style: TextStyle(fontSize: 12, color: Colors.black),
@@ -49,7 +49,7 @@ class VerificationPage extends HookConsumerWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   VerificationCode(
@@ -60,27 +60,27 @@ class VerificationPage extends HookConsumerWidget {
                     length: 5,
                     fullBorder: true,
                     underlineColor: Colors.transparent,
-                    fillColor: Color(0xfff6f4ff),
+                    fillColor: const Color(0xfff6f4ff),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     "Vous n'avez pas reçu de code?",
                     style: TextStyle(
                       fontSize: 12,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 3,
                   ),
                   InkWell(
                     onTap: () {
                       //TODO: Send new code
                       ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text("Sending code...")));
+                          const SnackBar(content: Text("Sending code...")));
                     },
-                    child: Text(
+                    child: const Text(
                       "Ré-envoyer le code?",
                       style: TextStyle(
                         fontSize: 12,
@@ -88,16 +88,16 @@ class VerificationPage extends HookConsumerWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 3,
                   ),
                   InkWell(
                     onTap: () {
                       //TODO: Select another verification method
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                           content: Text("Changing verification method...")));
                     },
-                    child: Text(
+                    child: const Text(
                       "Essayer une autre méthode",
                       style: TextStyle(
                         fontSize: 12,
@@ -105,16 +105,16 @@ class VerificationPage extends HookConsumerWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 3,
                   ),
                   InkWell(
                     onTap: () {
                       //TODO: Send new code via email
                       ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text("Sending code via email...")));
+                          const SnackBar(content: Text("Sending code via email...")));
                     },
-                    child: Text(
+                    child: const Text(
                       "Recevoir le code par email",
                       style: TextStyle(
                         fontSize: 12,
@@ -130,7 +130,7 @@ class VerificationPage extends HookConsumerWidget {
                 onPressed: () {
                   //TODO: Validate code
                   ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text("Verifying code...")));
+                      const SnackBar(content: Text("Verifying code...")));
                 },
                 style: const ButtonStyle(
                   backgroundColor: WidgetStatePropertyAll(
